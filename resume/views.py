@@ -6,4 +6,4 @@ from django.shortcuts import redirect
 
 def profile_home(request):
     post = get_object_or_404(ProfilePost, pk=1)
-    return render(request, 'resume/index.html', {'post': post})
+    return render(request, 'resume/profile.html', {'post': post})

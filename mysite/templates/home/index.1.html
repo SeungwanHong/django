@@ -1,145 +1,171 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Swan`s home page</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-        </style>
-    </head>
-<body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-        <!-- Left Column -->
-        <div class="w3-third">
-
-            <div class="w3-white w3-text-grey w3-card-4">
-                <div class="w3-display-container">
-                    <img src="" style="width:100%" alt="승완">
-                    <div class="w3-display-bottomleft w3-container w3-text-black">
-                    <h2>SeungWan Hong</h2>
-                    </div>
-                </div>
-                <div class="w3-container">
-                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Program Developer</p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Heanam ,Korea</p>
-                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>swhgog@gmail.com</p>
-                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>010-0000-0000</p>
-                    <hr>
-                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Program Languages</b></p>
-                    <p>C</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-                            <div class="w3-center w3-text-white">80%</div>
-                        </div>
-                    </div>
-                    <p>JAVA</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-                            <div class="w3-center w3-text-white">80%</div>
-                        </div>
-                    </div>
-                    <p>Python</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">
-                            <div class="w3-center w3-text-white">40%</div>
-                        </div>
-                    </div>
-<!--                large progress bar
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:40%"></div>
-                    </div>
--->
-                    <br> 
-                    <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Project career</b></p>
-                    <ul>
-                        <li>안녕하세요</li>
-                        <li>안녕하세요</li>
-                        <li>안녕하세요</li>
-                        <li>안녕하세요</li>
-                        <li>안녕하세요</li>
-                        <li>안녕하세요</li>
-                    </ul>
-                    <br>
-                </div>
-            </div><br>
-
-        <!-- End Left Column -->
+{% load staticfiles %}
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adriya - Minimal, Creative, One Page Bootstrap Template</title>
+<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'home/css/flexslider.css' %}">
+<link rel="stylesheet" href="{% static 'home/css/jquery.fancybox.css' %}">
+<link rel="stylesheet" href="{% static 'home/css/main.css' %}">
+<link rel="stylesheet" href="{% static 'home/css/responsive.css' %}">
+<link rel="stylesheet" href="{% static 'home/css/animate.min.css' %}">
+<link rel="stylesheet" href="{% static 'home/css/font-icon.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- header top section -->
+<section class="banner" role="banner">
+  <header id="header">
+    <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="{% static 'home/images/logo.png' %}" alt=""></a>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+          <li>612.269.8419</li>
+          <li><a href="mainlto:hello@phdl.co">hello@agency.com</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+  </header>
+</section>
+<!-- header top section --> 
+<!-- header content section -->
+<section id="hero" class="section ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-6 hero">
+        <div class="hero-content">
+          <h1>Mordern, Minimal & Inspiring.</h1>
         </div>
-
-        <!-- Right Column -->
-        <div class="w3-twothird">
-
-            <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-                    <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-                    <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-                </div>
-            </div>
-
-            <div class="w3-container w3-card-2 w3-white">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-                    <p>Web Development! All I need to know in one place</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>London Business School</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-                    <p>Master Degree</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>School of Coding</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-                    <p>Bachelor Degree</p><br>
-                </div>
-            </div>
-
-        <!-- End Right Column -->
+        <!-- hero --> 
+      </div>
+      <div class="col-md-5 col-sm-6 hero">
+        <div class="hero-content">
+          <p>FREE Bootstrap v3.3.5 frame work base minimal portfolio template for presonal use and creative agency.</p>
         </div>
-
-    <!-- End Grid -->
+        <!-- hero --> 
+      </div>
     </div>
-
-<!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-    <p>Find me on social media.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</section>
+<!-- header content section --> 
+<!-- portfolio grid section -->
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <hr class="section">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 portfolio-item"> <a href="work-details.html" class="portfolio-link">
+        <div class="caption">
+          <div class="caption-content">
+            <h3>The Shape of Design</h3>
+            <h4>Branding/Graphic</h4>
+          </div>
+        </div>
+        <img src="{% static 'home/images/portfolio/work-1.jpg' %}" class="img-responsive" alt=""> </a> </div>
+      <div class="col-sm-6 portfolio-item"> <a href="work-details.html" class="portfolio-link">
+        <div class="caption">
+          <div class="caption-content">
+            <h3>czarna kawka</h3>
+            <h4>Branding</h4>
+          </div>
+        </div>
+        <img src="{% static 'home/images/portfolio/work-2.jpg' %}" class="img-responsive" alt=""> </a> </div>
+      <div class="col-sm-6 portfolio-item"> <a href="work-details.html" class="portfolio-link">
+        <div class="caption">
+          <div class="caption-content">
+            <h3>czarna kawka</h3>
+            <h4>Branding</h4>
+          </div>
+        </div>
+        <img src="{% static 'home/images/portfolio/work-3.jpg' %}" class="img-responsive" alt=""> </a> </div>
+      <div class="col-sm-6 portfolio-item"> <a href="work-details.html" class="portfolio-link">
+        <div class="caption">
+          <div class="caption-content">
+            <h3>czarna kawka</h3>
+            <h4>Branding</h4>
+          </div>
+        </div>
+        <img src="{% static 'home/images/portfolio/work-4.jpg' %}" class="img-responsive" alt=""> </a> </div>
+      <div class="col-sm-6 portfolio-item"> <a href="work-details.html" class="portfolio-link">
+        <div class="caption">
+          <div class="caption-content">
+            <h3>czarna kawka</h3>
+            <h4>Branding</h4>
+          </div>
+        </div>
+        <img src="{% static 'home/images/portfolio/work-5.jpg' %}" class="img-responsive" alt=""> </a> </div>
+      <div class="col-sm-6 portfolio-item"> <a href="work-details.html" class="portfolio-link">
+        <div class="caption">
+          <div class="caption-content">
+            <h3>czarna kawka</h3>
+            <h4>Branding</h4>
+          </div>
+        </div>
+        <img src="{% static 'images/portfolio/work-6.jpg' %}" class="img-responsive" alt=""> </a> </div>
+    </div>
+  </div>
+</section>
+<!-- portfolio grid section --> 
+<!-- service section -->
+<section id="service" class="service section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-6">
+        <h4>We're expert to create beautiful design & smart technology</h4>
+        <p>Nullam at enim mauris. Donec et nunc ipsum. Suspendi tempus fringilla ipsu Cras metus euismod velit gravida at nunc ipsum.</p>
+      </div>
+      <div class="col-md-7 col-sm-6">
+        <div class="col-md-4 col-sm-6 service text-center"> <span class="icon icon-browser"></span>
+          <div class="service-content">
+            <h5>Web & Mobile</h5>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 service text-center"> <span class="icon icon-trophy"></span>
+          <div class="service-content">
+            <h5>Branding</h5>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 service text-center"> <span class="icon icon-megaphone"></span>
+          <div class="service-content">
+            <h5>Digital Marketing</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- service section --> 
+<!-- footer section -->
+<footer class="footer">
+  <div class="container">
+    <div class="col-md-6 left">
+      <h4>Let's work together</h4>
+      <p> Call: 612.269.8419 OR Email : <a href="mailto:hello@agency.com"> hello@agency.com </a></p>
+    </div>
+    <div class="col-md-6 right">
+      <p>© 2015 All rights reserved. All Rights Reserved<br>
+        Made with <i class="fa fa-heart pulse"></i> by <a href="http://www.designstub.com/">Designstub</a></p>
+    </div>
+  </div>
 </footer>
+<!-- footer section --> 
 
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script> 
+<script src="{% static 'home/js/jquery.fancybox.pack.js' %}"></script> 
+<script src="{% static 'home/js/retina.min.js' %}"></script> 
+<script src="{% static 'home/js/modernizr.js' %}"></script> 
+<script src="{% static 'home/js/main.js' %}"></script>
 </body>
 </html>
