@@ -5,5 +5,4 @@ from .forms import PostForm
 from django.shortcuts import redirect
 
 def main_home(request):
-    post = get_object_or_404(HomePost, pk=1)
-    return render(request, 'home/index.html', {'post': post})
+    return render(request, 'home/index.html')
